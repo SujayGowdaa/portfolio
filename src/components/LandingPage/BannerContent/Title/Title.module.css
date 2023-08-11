@@ -1,0 +1,113 @@
+.title-container {
+  margin: auto 0;
+}
+
+.title-primary {
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  letter-spacing: -1px;
+  color: var(--primary-color);
+}
+
+.title-secondary {
+  font-size: 3.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+.title-tertiary {
+  font-size: 3.4rem;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+  color: var(--text-color-1);
+}
+
+.title-paragraph {
+  max-width: 48rem;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  color: var(--text-color-1);
+}
+
+.cta-btns {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1.2rem 2.4rem;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.btn-contact,
+.btn-resume {
+  user-select: none;
+  border: 0.2rem solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-icon,
+.contact-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.1rem;
+}
+
+.btn-resume {
+  background-color: transparent;
+  outline: 0.2rem solid var(--text-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.btn-resume::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.btn-resume:hover::after {
+  transition: 0.3s ease-out;
+  transform: translateX(0%);
+  background-color: var(--text-color);
+}
+
+.btn-contact {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+.btn-contact:hover {
+  transition: 0.2s ease-out;
+  background-color: var(--primary-color);
+  color: var(--primary-color-1);
+}
+
+.btn-contact:active {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+.btn-resume:hover {
+  color: var(--background-color);
+  outline: 0.2rem solid var(--text-color);
+  /* background-color: var(--text-color); */
+}
+.btn-resume:active {
+  transition: 0.2s ease-out;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  outline: 0.2rem solid var(--text-color);
+}

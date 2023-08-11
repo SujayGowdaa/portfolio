@@ -1,0 +1,86 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  width: 80%;
+}
+
+.nav-lists {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  width: 4.4rem;
+  height: 2.2rem;
+  border-radius: 2rem;
+  background-color: var(--text-color);
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  background-color: var(--body-color);
+  transition: all 0.3s;
+}
+
+.switch-active {
+  transition: all 0.3s;
+  margin-left: 20px;
+  background-color: var(--body-color);
+}
+
+.nav-lists a {
+  color: var(--text-color-1);
+  transition: 0.5s;
+}
+.nav-lists a:hover {
+  color: var(--text-color);
+}
+
+.nav-lists a::after {
+  margin-top: 0.2rem;
+  content: "";
+  display: flex;
+  width: 0%;
+  height: 1.5px;
+  transition: all 0.4s ease-out;
+  background-color: var(--text-color);
+}
+.nav-lists a:hover::after {
+  content: "";
+  width: 100%;
+  background-color: var(--text-color);
+  /* border: 1px solid var(--primary-color); */
+  transform: translateX(0%);
+  visibility: visible;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.icon-moon,
+.icon-sun {
+  color: var(--text-color);
+}

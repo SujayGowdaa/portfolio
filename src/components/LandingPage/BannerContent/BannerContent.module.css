@@ -1,0 +1,9 @@
+.content-container {
+  width: 50%;
+  height: 80rem;
+  padding: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  position: relative;
+}

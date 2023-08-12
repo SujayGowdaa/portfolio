@@ -117,7 +117,7 @@ export default function Certificates() {
                 <div className={classes["content-container"]}>
                   <div>
                     <p className={classes["title"]}>{data.title}</p>
-                    <p>{data.courseProvider}</p>
+                    {data.courseProvider}
                   </div>
                   <div className={classes["container"]}>
                     <MdOpenInNew className={classes["icon"]} />

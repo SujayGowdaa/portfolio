@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import classes from "./RoleResponsibilities.module.css";
 
 const data = [
@@ -85,7 +86,7 @@ const data = [
 ];
 
 export default function RoleResponsibilities(props) {
-  const index = props.index + 1;
+  let index = props.index + 1;
   const roles = data[index - 1].description;
 
   const randomNum = Math.random();

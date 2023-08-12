@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classes from "./CompanyTab.module.css";
 import RoleResponsibilities from "./RoleResponsibilities/RoleResponsibilities";
 
 export default function CompanyTab() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
+
+  useEffect(() => {
+    const tabNum = JSON.parse(localStorage.getItem("tab"));
+    setActiveContentIndex(Number(tabNum));
+  }, []);
 
   return (
     <>
@@ -14,7 +19,10 @@ export default function CompanyTab() {
               ? `${classes["company-name-btn"]} ${classes["active"]}`
               : classes["company-name-btn"]
           }
-          onClick={() => setActiveContentIndex(0)}
+          onClick={() => {
+            localStorage.setItem("tab", "0");
+            setActiveContentIndex(0);
+          }}
         >
           i4Sight
         </button>
@@ -24,7 +32,10 @@ export default function CompanyTab() {
               ? `${classes["company-name-btn"]} ${classes["active"]}`
               : classes["company-name-btn"]
           }
-          onClick={() => setActiveContentIndex(1)}
+          onClick={() => {
+            localStorage.setItem("tab", "1");
+            setActiveContentIndex(1);
+          }}
         >
           Snapchat
         </button>
@@ -34,7 +45,10 @@ export default function CompanyTab() {
               ? `${classes["company-name-btn"]} ${classes["active"]}`
               : classes["company-name-btn"]
           }
-          onClick={() => setActiveContentIndex(2)}
+          onClick={() => {
+            localStorage.setItem("tab", "2");
+            setActiveContentIndex(2);
+          }}
         >
           Hudson's Bay
         </button>
@@ -44,7 +58,10 @@ export default function CompanyTab() {
               ? `${classes["company-name-btn"]} ${classes["active"]}`
               : classes["company-name-btn"]
           }
-          onClick={() => setActiveContentIndex(3)}
+          onClick={() => {
+            localStorage.setItem("tab", "3");
+            setActiveContentIndex(3);
+          }}
         >
           Target
         </button>
@@ -54,7 +71,10 @@ export default function CompanyTab() {
               ? `${classes["company-name-btn"]} ${classes["active"]}`
               : classes["company-name-btn"]
           }
-          onClick={() => setActiveContentIndex(4)}
+          onClick={() => {
+            localStorage.setItem("tab", "4");
+            setActiveContentIndex(4);
+          }}
         >
           Flipkart
         </button>

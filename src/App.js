@@ -8,10 +8,10 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import Projects from "./components/Projects/Projects";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ThemeContext from "./components/context/ThemeContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [isLightModeOn, setLightMode] = useState(false);
+  const [isLightModeOn, setLightMode] = useState(true);
   const mode = { isLightModeOn, setLightMode };
 
   return (

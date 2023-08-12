@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
@@ -6,6 +6,15 @@ import ThemeContext from "../../../context/ThemeContext";
 
 export default function Navbar() {
   const [isLightMode, setLightMode] = useState(true);
+
+  useEffect(() => {
+    const isDarkModeOn = JSON.parse(localStorage.getItem("isDarkModeOn"));
+    if (!isDarkModeOn) {
+      setLightMode(false);
+      value.setLightMode(false);
+    }
+  }, []);
+
   const value = useContext(ThemeContext);
 
   return (
@@ -30,20 +39,21 @@ export default function Navbar() {
         className={classes["theme-switch"]}
         onClick={() => {
           setLightMode(!isLightMode);
-          value.setLightMode(isLightMode);
+          value.setLightMode(!isLightMode);
+          localStorage.setItem("isDarkModeOn", JSON.stringify(!isLightMode));
         }}
       >
         <div
           className={
             isLightMode
-              ? classes.switch
-              : `${classes.switch} ${classes["switch-active"]}`
+              ? `${classes.switch} ${classes["switch-active"]}`
+              : classes.switch
           }
         >
           {isLightMode ? (
-            <FaMoon className={`${classes["icon"]} ${classes["icon-moon"]}`} />
-          ) : (
             <FaSun className={`${classes["icon"]} ${classes["icon-sun"]}`} />
+          ) : (
+            <FaMoon className={`${classes["icon"]} ${classes["icon-moon"]}`} />
           )}
         </div>
       </div>

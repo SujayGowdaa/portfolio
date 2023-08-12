@@ -1,5 +1,6 @@
 import classes from "./App.module.css";
 import About from "./components/About/About";
+import Certificates from "./components/Certificate/Certificates";
 import Experience from "./components/Experience/Experience";
 import LandingPage from "./components/LandingPage/LandingPage";
 import ThemeContext from "./components/context/ThemeContext";
@@ -18,6 +19,7 @@ function App() {
         <LandingPage />
         <About />
         <Experience />
+        <Certificates />
       </div>
     </ThemeContext.Provider>
   );

@@ -1,5 +1,5 @@
 .secondary-heading {
-  font-size: 4.4rem;
+  font-size: 4rem;
   color: var(--primary-color);
   font-weight: 600;
   display: flex;
@@ -7,7 +7,7 @@
   gap: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 4.8rem;
+  margin-bottom: 9.6rem;
 }
 
 .secondary-heading::after {

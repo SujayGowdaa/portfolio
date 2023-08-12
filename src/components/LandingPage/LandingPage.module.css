@@ -12,9 +12,9 @@
 }
 
 .border-bottom {
-  border-bottom: 4px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .border-top {
-  border-top: 4px solid var(--primary-color);
+  border-top: 2px solid var(--primary-color);
 }

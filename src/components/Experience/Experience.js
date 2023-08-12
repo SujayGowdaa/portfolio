@@ -1,7 +1,6 @@
 import classes from "./Experience.module.css";
 import Container from "../UI/Container";
 import CompanyTab from "./CompanyTab/CompanyTab";
-import RoleResponsibilities from "./CompanyTab/RoleResponsibilities/RoleResponsibilities";
 
 export default function Experience() {
   return (

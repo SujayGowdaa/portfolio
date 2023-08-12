@@ -1,0 +1,105 @@
+.secondary-heading {
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 9.6rem;
+}
+
+.secondary-heading::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.card {
+  display: flex;
+  outline: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.icon-container {
+  background-color: var(--primary-color);
+  height: 100%;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13rem;
+}
+
+.card-icon {
+  font-size: 3.6rem;
+}
+
+.container {
+  align-self: start;
+}
+
+.content-container {
+  display: flex;
+  gap: 2.4rem;
+  flex-basis: 80%;
+  padding: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.course-provider {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--text-color-1);
+}
+
+.course-provider span {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 2.4rem;
+}
+
+.card:hover .content-container {
+  transition: all 0.3s ease-out;
+  background-color: var(--text-color);
+}
+.card:hover .title {
+  transition: all 0.3s ease-out;
+  color: var(--background-color);
+}
+.card:hover {
+  transition: all 0.3s ease-out;
+  outline: 2px solid var(--primary-color-1);
+}
+.card:hover .card-icon,
+.card:hover .icon {
+  transition: all 0.3s ease-out;
+  color: var(--background-color);
+}
+
+.card:hover .icon-container {
+  transition: all 0.3s ease-out;
+  background-color: var(--primary-color-1);
+}

@@ -1,0 +1,113 @@
+.secondary-heading {
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 9.6rem;
+}
+
+.secondary-heading::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.name-container,
+.number-container,
+.email-container,
+.message-container,
+.submit-container {
+  display: flex;
+  flex-direction: column;
+}
+.submit-container {
+  align-items: flex-end;
+}
+
+.name,
+.number,
+.email,
+.message,
+.submit {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  color: var(--text-color);
+}
+
+input,
+textarea {
+  height: 5rem;
+  width: 100%;
+  border: none;
+  background-color: var(--background-color);
+  outline: 1px solid var(--text-color-1);
+  color: var(--text-color-1);
+  font-size: 1.8rem;
+  padding-left: 2rem;
+  font-family: inherit;
+}
+
+textarea {
+  padding-top: 1rem;
+  height: 15rem;
+  margin-bottom: 0px;
+  resize: none;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.6rem;
+}
+
+input:focus,
+textarea:focus {
+  transition: all 0.1s ease-in;
+  background-color: var(--body-color-1);
+  color: var(--text-color);
+  outline: 2px solid var(--primary-color);
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  justify-content: center;
+}
+
+.submit-btn:hover {
+  transition: 0.2s ease-out;
+  background-color: var(--primary-color-1);
+  color: var(--background-color);
+}
+.submit-btn:active {
+  background-color: var(--primary-color);
+}
+
+.btn-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: white;
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.2rem 2.4rem;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}

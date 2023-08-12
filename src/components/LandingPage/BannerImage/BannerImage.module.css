@@ -6,4 +6,11 @@
 
 .image-container img {
   height: 100%;
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+  transform: scale(1.12);
+}
+
+.banner-image:hover {
+  transform: scale(1.05);
 }

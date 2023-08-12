@@ -44,3 +44,7 @@ a {
   list-style: none;
   display: inline-block;
 }
+
+section {
+  outline: 4px solid var(--primary-color);
+}

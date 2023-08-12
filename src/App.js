@@ -1,5 +1,5 @@
 import classes from "./App.module.css";
-
+import About from "./components/About/About";
 import LandingPage from "./components/LandingPage/LandingPage";
 import ThemeContext from "./components/context/ThemeContext";
 import { useState } from "react";
@@ -15,6 +15,7 @@ function App() {
         theme={mode.isLightModeOn ? "light" : "dark"}
       >
         <LandingPage />
+        <About />
       </div>
     </ThemeContext.Provider>
   );

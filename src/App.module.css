@@ -1,5 +1,5 @@
 .app[theme="light"] {
-  --primary-color: #c39974;
+  --primary-color: #ac815c;
   --primary-color-1: #815937;
   --background-color: #ffffff;
   --text-color: #0d0d0d;
@@ -8,7 +8,7 @@
 }
 
 .app[theme="dark"] {
-  --primary-color: #c39974;
+  --primary-color: #ac815c;
   --primary-color-1: #815937;
   --background-color: #0d0d0d;
   --text-color: #ffffff;

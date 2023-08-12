@@ -1,0 +1,30 @@
+.container-btn {
+  width: 8rem;
+  height: 8rem;
+  position: fixed;
+  bottom: 10rem;
+  right: 10rem;
+  z-index: 4;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+}
+
+.container-btn:hover {
+  background-color: var(--text-color);
+  background-color: var(--primary-color-1);
+}
+
+.container-btn:hover .icon {
+  transition: all 0.2s ease-out;
+  color: var(--background-color);
+}
+
+.icon {
+  color: var(--background-color);
+  font-size: 4rem;
+  stroke-width: 1.2;
+}

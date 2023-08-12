@@ -52,7 +52,7 @@
   color: var(--primary-color);
 }
 .secondary-paragraph {
-  color: var(--text-color-1);
+  color: var(--text-color);
   font-size: 1.8rem;
   margin-top: 2.4rem;
 }

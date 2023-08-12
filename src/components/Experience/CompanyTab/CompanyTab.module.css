@@ -18,7 +18,7 @@
 .company-name-btn:hover {
   transition: all 0.2s;
   background-color: var(--text-color-1);
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .company-roles .active {

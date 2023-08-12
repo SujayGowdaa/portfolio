@@ -86,17 +86,17 @@
 
 .btn-contact {
   color: var(--background-color);
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
 }
 .btn-contact:hover {
+  background-color: var(--text-color);
   transition: 0.2s ease-out;
-  background-color: var(--primary-color);
-  color: var(--primary-color-1);
+  color: var(--background-color);
 }
 
 .btn-contact:active {
   color: var(--background-color);
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 .btn-resume:hover {

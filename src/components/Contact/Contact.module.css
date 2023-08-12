@@ -33,7 +33,7 @@
   flex-direction: column;
 }
 .submit-container {
-  align-items: flex-end;
+  /* align-items: flex-start; */
 }
 
 .name,
@@ -42,7 +42,7 @@
 .message,
 .submit {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1.6rem;
   color: var(--text-color);
 }
@@ -87,11 +87,12 @@ textarea:focus {
 
 .submit-btn:hover {
   transition: 0.2s ease-out;
-  background-color: var(--primary-color-1);
+  background-color: var(--text-color);
   color: var(--background-color);
 }
 .submit-btn:active {
   background-color: var(--primary-color);
+  color: var(--background-color);
 }
 
 .btn-reset {
@@ -108,6 +109,6 @@ textarea:focus {
   padding: 1.2rem 2.4rem;
   letter-spacing: 0.2px;
   cursor: pointer;
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
   color: var(--background-color);
 }

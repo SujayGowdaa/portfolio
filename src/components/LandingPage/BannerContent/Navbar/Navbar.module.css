@@ -24,9 +24,9 @@
 
 .theme-switch {
   width: 4.4rem;
-  height: 2.2rem;
+  height: 2.3rem;
   border-radius: 2rem;
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   padding: 2px;
@@ -37,8 +37,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2rem;
-  width: 2rem;
+  height: 1.8rem;
+  width: 1.8rem;
   border-radius: 2rem;
   background-color: var(--body-color);
   transition: all 0.3s;
@@ -46,32 +46,31 @@
 
 .switch-active {
   transition: all 0.3s;
-  margin-left: 20px;
+  margin-left: 21.8px;
   background-color: var(--body-color);
 }
 
 .nav-lists a {
-  color: var(--text-color-1);
+  color: var(--text-color);
   transition: 0.5s;
 }
 .nav-lists a:hover {
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .nav-lists a::after {
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
   content: "";
   display: flex;
   width: 0%;
-  height: 1.5px;
+  height: 1.8px;
   transition: all 0.4s ease-out;
   background-color: var(--text-color);
 }
 .nav-lists a:hover::after {
   content: "";
   width: 100%;
-  background-color: var(--text-color);
-  /* border: 1px solid var(--primary-color); */
+  background-color: var(--primary-color);
   transform: translateX(0%);
   visibility: visible;
 }

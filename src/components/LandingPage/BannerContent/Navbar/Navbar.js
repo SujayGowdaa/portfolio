@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import classes from "./Navbar.module.css";
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
+import ThemeContext from "../../../context/ThemeContext";
 
 export default function Navbar() {
-  const [isDarkModeOn, setIsDarkModeOn] = useState(false);
+  const [isLightMode, setLightMode] = useState(true);
+  const value = useContext(ThemeContext);
 
   return (
     <div className={classes["nav-container"]}>
@@ -26,16 +28,19 @@ export default function Navbar() {
       </nav>
       <div
         className={classes["theme-switch"]}
-        onClick={() => setIsDarkModeOn(!isDarkModeOn)}
+        onClick={() => {
+          setLightMode(!isLightMode);
+          value.setLightMode(isLightMode);
+        }}
       >
         <div
           className={
-            isDarkModeOn
+            isLightMode
               ? classes.switch
               : `${classes.switch} ${classes["switch-active"]}`
           }
         >
-          {isDarkModeOn ? (
+          {isLightMode ? (
             <FaMoon className={`${classes["icon"]} ${classes["icon-moon"]}`} />
           ) : (
             <FaSun className={`${classes["icon"]} ${classes["icon-sun"]}`} />

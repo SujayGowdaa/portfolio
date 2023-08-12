@@ -4,6 +4,6 @@
   padding: 9.6rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   position: relative;
+  z-index: 1;
 }

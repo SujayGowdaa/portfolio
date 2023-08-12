@@ -1,11 +1,22 @@
-import styles from "./App.module.css";
+import classes from "./App.module.css";
+
 import LandingPage from "./components/LandingPage/LandingPage";
+import ThemeContext from "./components/context/ThemeContext";
+import { useState } from "react";
 
 function App() {
+  const [isLightModeOn, setLightMode] = useState(false);
+  const mode = { isLightModeOn, setLightMode };
+
   return (
-    <div className={styles.app} theme="light">
-      <LandingPage />
-    </div>
+    <ThemeContext.Provider value={mode}>
+      <div
+        className={classes.app}
+        theme={mode.isLightModeOn ? "light" : "dark"}
+      >
+        <LandingPage />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 export default App;

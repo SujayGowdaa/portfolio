@@ -1,11 +1,20 @@
 .section {
   height: 80rem;
   background-color: var(--background-color);
+  overflow-y: hidden;
 }
 
 .container {
   max-width: 256rem;
-  max-width: 180em;
+  /* max-width: 180em; */
   display: flex;
   margin: 0 auto;
+}
+
+.border-bottom {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.border-top {
+  border-top: 4px solid var(--primary-color);
 }

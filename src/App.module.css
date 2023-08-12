@@ -7,44 +7,11 @@
   --body-color: #f2f2f2;
 }
 
-.app[theme="light"] {
+.app[theme="dark"] {
   --primary-color: #c39974;
   --primary-color-1: #815937;
   --background-color: #0d0d0d;
   --text-color: #ffffff;
   --text-color-1: #a6a6a6;
   --body-color: #000000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  line-height: 0.7;
-  scroll-behavior: smooth;
-}
-
-body {
-  color: white;
-  font-family: "Poppins", sans-serif;
-}
-body::-webkit-scrollbar {
-  display: none;
-}
-
-ul li,
-a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  list-style: none;
-  display: inline-block;
-}
-
-section {
-  outline: 4px solid var(--primary-color);
 }

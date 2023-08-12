@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  line-height: 0.7;
   scroll-behavior: smooth;
 }
 
@@ -13,4 +14,17 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
+}
+
+ul li,
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+}
+
+section {
+  border-bottom: 4px solid var(--primary-color);
 }

@@ -1,5 +1,6 @@
 import classes from "./App.module.css";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 import LandingPage from "./components/LandingPage/LandingPage";
 import ThemeContext from "./components/context/ThemeContext";
 import { useState } from "react";
@@ -16,6 +17,7 @@ function App() {
       >
         <LandingPage />
         <About />
+        <Experience />
       </div>
     </ThemeContext.Provider>
   );

@@ -1,0 +1,25 @@
+.tab-lists {
+  display: flex;
+  width: 100%;
+  gap: 3.2rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4.8rem;
+}
+
+.secondary-heading::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+}

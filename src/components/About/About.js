@@ -30,7 +30,11 @@ export default function About() {
             </div>
             <div>
               <IoLogoJavascript className={classes["logo"]} />
-              <p className={classes["logo-title"]}>JAVASCRIPT ES6+</p>
+              <p className={classes["logo-title"]}>
+                JAVASCRIPT
+                <br />
+                ES6+
+              </p>
             </div>
             <div>
               <FaCss3Alt className={classes["logo"]} />

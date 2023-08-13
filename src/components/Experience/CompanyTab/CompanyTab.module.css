@@ -4,6 +4,7 @@
 }
 
 .company-roles button {
+  height: 100%;
   font-weight: 500;
   user-select: none;
   border: none;
@@ -14,6 +15,7 @@
   text-align: left;
   min-width: 15.6rem;
   font-size: 1.6rem;
+  outline: 1px solid var(--border-color);
 }
 
 .company-name-btn:hover {
@@ -25,4 +27,28 @@
 .company-roles .active {
   background-color: var(--text-color);
   color: var(--background-color);
+}
+
+@media (max-width: 1600px) {
+  .company-roles button {
+    /* padding: 1.8rem 2.4rem; */
+    min-width: 15rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .company-roles {
+    flex-direction: row;
+    height: 100%;
+    outline: 1px solid var(--border-color);
+  }
+  .company-roles button {
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+  .company-roles {
+    /* min-width: 100%; */
+    overflow-x: scroll;
+  }
 }

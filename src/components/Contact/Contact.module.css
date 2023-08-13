@@ -111,3 +111,62 @@ textarea:focus {
   background-color: var(--primary-color);
   color: var(--background-color);
 }
+
+@media (max-width: 1600px) {
+  .secondary-heading {
+    gap: 1.2rem;
+    margin-bottom: 6.4rem;
+  }
+  .form-container {
+    gap: 3.6rem;
+  }
+
+  .submit-container {
+    width: 15rem;
+  }
+
+  .name,
+  .number,
+  .email,
+  .message,
+  .submit {
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  input,
+  textarea {
+    height: 4.5rem;
+    font-size: 1.6rem;
+    padding-left: 1.8rem;
+  }
+
+  textarea {
+    padding-top: 1rem;
+    height: 13rem;
+    margin-bottom: 0px;
+    resize: none;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .secondary-heading {
+    gap: 0.6rem;
+    margin-bottom: 4.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+}

@@ -83,3 +83,27 @@
 .icon-sun {
   color: var(--text-color);
 }
+
+@media (max-width: 1500px) {
+  .theme-switch {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    padding: 1.8px;
+  }
+
+  .switch {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 2rem;
+  }
+  .switch-active {
+    margin-left: 20.2px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-lists {
+    gap: 2.4rem;
+  }
+}

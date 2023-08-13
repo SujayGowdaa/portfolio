@@ -7,7 +7,7 @@
   gap: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 9.6rem;
+  margin-bottom: 8rem;
 }
 
 .secondary-heading::after {
@@ -22,7 +22,7 @@
   color: var(--text-color);
   font-size: 2rem;
   font-weight: 500;
-  line-height: 3.8rem;
+  line-height: 3.2rem;
   text-align: justify;
 }
 .paragraph span:first-child {
@@ -55,4 +55,84 @@
   color: var(--text-color);
   font-size: 1.8rem;
   margin-top: 2.4rem;
+}
+
+@media (max-width: 1600px) {
+  .secondary-heading {
+    gap: 1.2rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+  }
+
+  .logo-container {
+    margin-top: 3rem;
+    gap: 4.4rem;
+  }
+
+  .logo-container div {
+    gap: 0.4rem;
+  }
+
+  .logo {
+    font-size: 4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .logo-title {
+    margin-top: 0.24rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .secondary-paragraph {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .secondary-heading {
+    gap: 0.6rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+  .paragraph {
+    font-size: 1.8rem;
+  }
+
+  .logo-container {
+    margin-top: 2.4rem;
+  }
+
+  .logo-container div {
+    gap: 0.2rem;
+  }
+
+  .logo {
+    font-size: 4rem;
+    margin-bottom: 0rem;
+  }
+
+  .secondary-paragraph {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo-container {
+    margin-top: 3rem;
+    gap: 3.2rem;
+    row-gap: 2.4rem;
+    flex-wrap: wrap;
+  }
 }

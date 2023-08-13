@@ -5,6 +5,7 @@
   --text-color: #0d0d0d;
   --text-color-1: #a6a6a6;
   --body-color: #f2f2f2;
+  --border-color: hsl(0, 0%, 85%);
 }
 
 .app[theme="dark"] {
@@ -14,4 +15,5 @@
   --text-color: #ffffff;
   --text-color-1: #a6a6a6;
   --body-color: #000000;
+  --border-color: hsl(0, 0%, 15%);
 }

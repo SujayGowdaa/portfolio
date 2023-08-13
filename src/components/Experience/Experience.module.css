@@ -23,3 +23,31 @@
   height: 0.2rem;
   background-color: var(--primary-color);
 }
+
+@media (max-width: 1600px) {
+  .secondary-heading {
+    gap: 1.2rem;
+    margin-bottom: 6.4rem;
+  }
+  .tab-lists {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+  .tab-lists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

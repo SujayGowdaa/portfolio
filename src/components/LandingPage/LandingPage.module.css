@@ -1,5 +1,4 @@
 .section {
-  height: 80rem;
   background-color: var(--background-color);
   overflow-y: hidden;
 }
@@ -17,4 +16,22 @@
 
 .border-top {
   border-top: 2px solid var(--primary-color);
+}
+
+@media (max-width: 1400px) {
+  /* .section {
+  height: 60rem;
+  background-color: var(--background-color);
+  overflow-y: hidden;
+} */
+}
+
+@media (max-width: 1000px) {
+  .section {
+    height: 75rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }

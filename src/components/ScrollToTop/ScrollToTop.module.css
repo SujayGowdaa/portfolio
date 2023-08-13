@@ -28,3 +28,26 @@
   font-size: 4rem;
   stroke-width: 1.2;
 }
+
+@media (max-width: 1600px) {
+  .container-btn {
+    width: 7rem;
+    height: 7rem;
+    bottom: 8rem;
+    right: 8rem;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-btn {
+    width: 5rem;
+    height: 5rem;
+    bottom: 6.5rem;
+    right: 6.5rem;
+    border-radius: 50%;
+  }
+  .icon {
+    font-size: 3rem;
+  }
+}

@@ -60,7 +60,7 @@
 
 .title {
   font-size: 1.8rem;
-  line-height: 2.6rem;
+  line-height: 1.6;
   margin-bottom: 1.8rem;
   font-weight: 600;
   color: var(--text-color);
@@ -68,7 +68,7 @@
 
 .course-provider {
   font-size: 1.2rem;
-  line-height: 1.8rem;
+  line-height: 1.8;
   color: var(--text-color-1);
 }
 
@@ -130,7 +130,6 @@
 
   .course-provider {
     font-size: 1.1rem;
-    line-height: 1.8rem;
   }
 
   .course-provider span {
@@ -193,11 +192,12 @@
   .title {
     font-size: 1.6rem;
     margin-bottom: 1.6rem;
+    line-height: 1.4;
   }
 
   .course-provider {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.4;
   }
 
   .course-provider span {

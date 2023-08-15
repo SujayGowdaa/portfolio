@@ -40,7 +40,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--text-color);
-  line-height: 2.6rem;
+  line-height: 1.6;
   text-align: justify;
   margin-right: 3.2rem;
 }
@@ -86,7 +86,6 @@
   .roles-paragraph {
     font-size: 1.7rem;
     font-weight: 500;
-    /* line-height: 2.4rem; */
     margin-right: 3rem;
   }
 
@@ -121,8 +120,8 @@
   .roles-paragraph {
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 2.4rem;
     margin-right: 2rem;
+    line-height: 1.4;
   }
 
   .list-style::before {

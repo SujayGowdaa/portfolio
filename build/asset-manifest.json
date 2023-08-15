@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85b7ae7d.css",
+    "main.js": "/static/js/main.ebe158fa.js",
+    "static/media/banner_image.jpg": "/static/media/banner_image.024a1e9d5cdaa8a61279.jpg",
+    "static/media/SUJAY_Resume.pdf": "/static/media/SUJAY_Resume.0266d8fa58a79b6d77bb.pdf",
+    "index.html": "/index.html",
+    "main.85b7ae7d.css.map": "/static/css/main.85b7ae7d.css.map",
+    "main.ebe158fa.js.map": "/static/js/main.ebe158fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85b7ae7d.css",
+    "static/js/main.ebe158fa.js"
+  ]
+}

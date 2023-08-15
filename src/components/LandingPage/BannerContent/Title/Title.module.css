@@ -138,6 +138,11 @@
     letter-spacing: 0.2px;
     cursor: pointer;
   }
+  .resume-icon,
+  .contact-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.1rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -163,6 +168,11 @@
   .btn {
     font-size: 1.6rem;
     padding: 1rem 2rem;
+  }
+  .resume-icon,
+  .contact-icon {
+    font-size: 1.7rem;
+    margin-bottom: 0.1rem;
   }
 }
 
@@ -249,5 +259,16 @@
   .btn {
     font-size: 1.4rem;
     padding: 0.6rem 1.2rem;
+  }
+  .resume-icon,
+  .contact-icon {
+    font-size: 1.4rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 6.4rem 2.4rem;
   }
 }

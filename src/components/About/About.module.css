@@ -22,7 +22,7 @@
   color: var(--text-color);
   font-size: 2rem;
   font-weight: 500;
-  line-height: 3.2rem;
+  line-height: 1.8;
   text-align: justify;
 }
 .paragraph span:first-child {
@@ -123,6 +123,7 @@
 
   .secondary-paragraph {
     font-size: 1.6rem;
+    font-weight: 500;
     margin-top: 2.4rem;
     line-height: 1.6;
   }
@@ -145,11 +146,14 @@
     height: 0.1rem;
   }
   .paragraph {
+    line-height: 1.6;
     font-size: 1.6rem;
   }
 
   .logo-container {
     margin-top: 2.2rem;
+    gap: 2.4rem;
+    row-gap: 1.2rem;
   }
 
   .logo-container div {
@@ -160,10 +164,20 @@
     font-size: 3.6rem;
     margin-bottom: 0rem;
   }
+  .logo-title {
+    margin-top: 0.24rem;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
 
   .secondary-paragraph {
     font-size: 1.4rem;
     margin-top: 2.2rem;
-    line-height: 1.8;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 3rem;
   }
 }

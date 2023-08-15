@@ -27,3 +27,9 @@
     padding: 6.4rem 3.2rem;
   }
 }
+
+@media (max-width: 450px) {
+  .container {
+    padding: 6.4rem 2.4rem;
+  }
+}

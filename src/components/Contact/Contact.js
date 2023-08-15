@@ -14,23 +14,20 @@ export default function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
+    console.log(mailData.message);
+    console.log(mailData.message.trim().length);
+    console.log(mailData.number.trim().length);
+    console.log(mailData.name);
+    console.log(mailData.email);
+
     if (
       mailData.name.trim().length === 0 ||
-      mailData.email.trim().length ||
       mailData.message.trim().length === 0
     ) {
-      // alert("Enter name");
+      alert("Enter name and message to send a mail.");
       return;
     } else {
       e.preventDefault();
-
-      setMailData({
-        name: "",
-        email: "",
-        number: "",
-        message: "",
-      });
-
       emailjs
         .sendForm(
           "service_9owgc98",
@@ -46,6 +43,13 @@ export default function Contact() {
             console.log(error.text);
           }
         );
+      setMailData({
+        name: "",
+        email: "",
+        number: "",
+        message: "",
+      });
+      alert("Mail sent! Thank You 🙂");
     }
   };
 
@@ -81,7 +85,6 @@ export default function Contact() {
               E-mail
             </label>
             <input
-              required
               type="email"
               id="email"
               placeholder="Your E-mail address"

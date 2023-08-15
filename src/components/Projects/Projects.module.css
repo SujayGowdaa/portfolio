@@ -40,3 +40,16 @@
     font-size: 3.6rem;
   }
 }
+
+@media (max-width: 550px) {
+  .secondary-heading {
+    font-size: 3rem;
+  }
+  .secondary-heading::after {
+    height: 0.1rem;
+  }
+  .msg {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

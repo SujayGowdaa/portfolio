@@ -136,3 +136,34 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 550px) {
+  .secondary-heading {
+    font-size: 3rem;
+  }
+  .secondary-heading::after {
+    height: 0.1rem;
+  }
+  .paragraph {
+    font-size: 1.6rem;
+  }
+
+  .logo-container {
+    margin-top: 2.2rem;
+  }
+
+  .logo-container div {
+    gap: 0.2rem;
+  }
+
+  .logo {
+    font-size: 3.6rem;
+    margin-bottom: 0rem;
+  }
+
+  .secondary-paragraph {
+    font-size: 1.4rem;
+    margin-top: 2.2rem;
+    line-height: 1.8;
+  }
+}

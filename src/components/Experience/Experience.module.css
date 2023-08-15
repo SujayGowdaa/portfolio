@@ -51,3 +51,13 @@
     width: 100%;
   }
 }
+
+@media (max-width: 550px) {
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  .secondary-heading::after {
+    height: 0.1rem;
+  }
+}

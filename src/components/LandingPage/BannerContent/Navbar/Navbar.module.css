@@ -107,3 +107,52 @@
     gap: 2.4rem;
   }
 }
+
+@media (max-width: 800px) {
+  .nav-lists {
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    z-index: 50;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 5rem;
+    transition: 0.3s;
+  }
+
+  .icon-nav {
+    color: var(--text-color);
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+  .nav-container {
+    background-color: var(--background-color);
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 20;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+    display: flex;
+    transform: translateY(-100%);
+  }
+  .icon-container-ative {
+    position: fixed;
+  }
+  .active {
+    transition: 0.3s;
+    transform: translateY(0%);
+    position: fixed;
+  }
+}

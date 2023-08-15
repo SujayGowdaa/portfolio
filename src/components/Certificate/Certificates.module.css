@@ -163,3 +163,54 @@
     font-size: 3.6rem;
   }
 }
+
+@media (max-width: 550px) {
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  .secondary-heading::after {
+    height: 0.1rem;
+  }
+  .grid {
+    gap: 2.4rem;
+  }
+
+  .icon-container {
+    width: 8rem;
+    padding: 1.6rem;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+  }
+
+  .content-container {
+    gap: 2rem;
+    padding: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .course-provider {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .course-provider span {
+    font-size: 1.2rem;
+  }
+
+  .icon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .icon-container {
+    display: none;
+  }
+}

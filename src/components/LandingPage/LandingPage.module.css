@@ -1,11 +1,9 @@
 .section {
   background-color: var(--background-color);
-  overflow-y: hidden;
 }
 
 .container {
   max-width: 256rem;
-  /* max-width: 180em; */
   display: flex;
   margin: 0 auto;
 }
@@ -33,5 +31,13 @@
   .container {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    height: 100%;
+    margin-top: 5rem;
+    border-bottom: 2px solid var(--primary-color);
   }
 }

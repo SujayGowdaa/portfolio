@@ -170,3 +170,52 @@ textarea:focus {
     font-size: 3.6rem;
   }
 }
+
+@media (max-width: 550px) {
+  .secondary-heading {
+    font-size: 3rem;
+  }
+  .secondary-heading::after {
+    height: 0.1rem;
+  }
+  .form-container {
+    gap: 3rem;
+  }
+
+  .submit-container {
+    width: 13rem;
+  }
+
+  .name,
+  .number,
+  .email,
+  .message,
+  .submit {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  input,
+  textarea {
+    height: 4.3rem;
+    font-size: 1.6rem;
+    padding-left: 1.6rem;
+  }
+
+  textarea {
+    padding-top: 1rem;
+    height: 12rem;
+    margin-bottom: 0px;
+    resize: none;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+  }
+}
